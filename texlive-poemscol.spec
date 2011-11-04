@@ -1,3 +1,9 @@
+# revision 23762
+# category Package
+# catalog-ctan /macros/latex/contrib/poemscol
+# catalog-date 2011-08-31 08:15:30 +0200
+# catalog-license lppl
+# catalog-version 2.54
 Name:		texlive-poemscol
 Version:	2.54
 Release:	1
@@ -50,6 +56,7 @@ automatic generation of a table of contents.
 #- source
 %doc %{_texmfdistdir}/source/latex/poemscol/poemscol.dtx
 %doc %{_texmfdistdir}/source/latex/poemscol/poemscol.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -60,3 +67,5 @@ automatic generation of a table of contents.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
