@@ -5,8 +5,8 @@
 # catalog-license lppl1.2
 # catalog-version 2.6
 Name:		texlive-poemscol
-Version:	2.6
-Release:	2
+Version:	2.60
+Release:	1
 Summary:	Typesetting Critical Editions of Poetry
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/poemscol
