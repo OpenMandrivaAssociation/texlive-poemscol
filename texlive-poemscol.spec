@@ -1,16 +1,16 @@
-# revision 27535
+# revision 23762
 # category Package
 # catalog-ctan /macros/latex/contrib/poemscol
-# catalog-date 2012-08-27 20:20:04 +0200
-# catalog-license lppl1.2
-# catalog-version 2.6
+# catalog-date 2011-08-31 08:15:30 +0200
+# catalog-license lppl
+# catalog-version 2.54
 Name:		texlive-poemscol
-Version:	2.60
-Release:	1
+Version:	2.54
+Release:	2
 Summary:	Typesetting Critical Editions of Poetry
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/poemscol
-License:	LPPL1.2
+License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poemscol.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poemscol.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poemscol.source.tar.xz
@@ -20,7 +20,7 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-The package offers LaTeX macros for typesetting critical
+Poemscol is a package of LaTeX macros for typesetting critical
 editions of poetry. Its features include automatic
 linenumbering, generation of separate endnotes sections for
 emendations, textual collations, and explanatory notes, special
@@ -56,3 +56,17 @@ automatic generation of a table of contents.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.54-2
++ Revision: 754985
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.54-1
++ Revision: 719280
+- texlive-poemscol
+- texlive-poemscol
+- texlive-poemscol
+- texlive-poemscol
+
