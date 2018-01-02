@@ -1,12 +1,6 @@
-# revision 31338
-# category Package
-# catalog-ctan /macros/latex/contrib/poemscol
-# catalog-date 2013-08-03 08:19:55 +0200
-# catalog-license lppl1.2
-# catalog-version 2.64
 Name:		texlive-poemscol
-Version:	2.64
-Release:	9
+Version:	2.95
+Release:	1
 Summary:	Typesetting Critical Editions of Poetry
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/poemscol
@@ -39,13 +33,10 @@ automatic generation of a table of contents.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/poemscol/poemscol.sty
-%doc %{_texmfdistdir}/doc/latex/poemscol/README
-%doc %{_texmfdistdir}/doc/latex/poemscol/poemscol.pdf
-%doc %{_texmfdistdir}/doc/latex/poemscol/poemscolcheatsheet.pdf
+%{_texmfdistdir}/tex/latex/poemscol
+%doc %{_texmfdistdir}/doc/latex/poemscol
 #- source
-%doc %{_texmfdistdir}/source/latex/poemscol/poemscol.dtx
-%doc %{_texmfdistdir}/source/latex/poemscol/poemscol.ins
+%doc %{_texmfdistdir}/source/latex/poemscol
 
 #-----------------------------------------------------------------------
 %prep
