@@ -1,5 +1,5 @@
 Name:		texlive-poemscol
-Version:	2.95
+Version:	2.97
 Release:	1
 Summary:	Typesetting Critical Editions of Poetry
 Group:		Publishing
