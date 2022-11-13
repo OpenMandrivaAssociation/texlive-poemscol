@@ -1,13 +1,13 @@
 Name:		texlive-poemscol
-Version:	2.97
-Release:	2
+Version:	56082
+Release:	1
 Summary:	Typesetting Critical Editions of Poetry
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/poemscol
 License:	LPPL1.2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poemscol.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poemscol.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poemscol.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poemscol.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poemscol.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poemscol.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +24,12 @@ the notes sections, index of titles and first lines, and
 automatic generation of a table of contents.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -40,7 +40,8 @@ automatic generation of a table of contents.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
