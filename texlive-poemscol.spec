@@ -1,6 +1,6 @@
 Name:		texlive-poemscol
 Version:	56082
-Release:	1
+Release:	2
 Summary:	Typesetting Critical Editions of Poetry
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/poemscol
